@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript">
+      $(function () { OpenTak.start(); });
+    </script>
+  </head>
+  <body>
+    <table id="board"></table>
+    <div>Current player: <span id="current-player"></span></div>
+    <div>
+      Kind:
+      <select name="piece-kind">
+        <option value="road">Road</option>
+        <option value="wall">Wall</option>
+        <option value="cap stone">Cap Stone</option>
+      </select>
+    </div>
+    <div>Row: <input type="number" name="row"></div>
+    <div>Column: <input type="number" name="column"></div>
+    <div><button id="play" type="button">Play</button></div>
+    <div id="message"></div>
+  </body>
+</html>

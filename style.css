@@ -1,0 +1,24 @@
+#board {
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+#board .cell {
+    width: 20px;
+    height: 20px;
+    float: left;
+    color: #00FF00;
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+#board .cell.empty {
+    background-color: #FFFFFF;
+}
+
+#board .cell.player-0 {
+    background-color: #FF0000;
+}
+
+#board .cell.player-1 {
+    background-color: #0000FF;
+}
